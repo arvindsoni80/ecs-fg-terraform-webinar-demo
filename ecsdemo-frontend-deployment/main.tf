@@ -32,20 +32,20 @@ locals {
 
 locals {
   env_name                     = "test"
-  cluster_id                   = "arn:aws:ecs:us-east-1:022457860714:cluster/Cluster-test"
+  cluster_id                   = "arn:aws:ecs:us-east-1:xxxx:cluster/Cluster-test"
   cluster_name                 = "Cluster-test"
   cluster_region               = "us-east-1"
-  ecs_task_execution_role_arn  = "arn:aws:iam::022457860714:role/test_ecs_task_execution_role"
+  ecs_task_execution_role_arn  = "arn:aws:iam::xxxx:role/test_ecs_task_execution_role"
   ecs_task_execution_role_name = "test_ecs_task_execution_role"
   private_subnets = [
-    "subnet-03495637b2b674d1b",
-    "subnet-055a7da7eac9a7a4f",
-    "subnet-0bfc5d9a510dde5db",
+    "subnet-xxxx",
+    "subnet-xxxx",
+    "subnet-xxxx",
   ]
   public_subnets = [
-    "subnet-0b904a4c269729b7e",
-    "subnet-06b6aecb64d88f623",
-    "subnet-052849f60f95f93a2",
+    "subnet-xxxx",
+    "subnet-xxxx",
+    "subnet-xxxx",
   ]
   vpc_id = "vpc-0c5b0c7efcd10c1ce"
 }
