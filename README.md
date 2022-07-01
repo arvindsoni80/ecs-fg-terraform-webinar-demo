@@ -7,13 +7,13 @@ In this repository there are following main folders
 * [core-infra](https://github.com/arvindsoni80/ecs-fg-terraform-webinar-demo/tree/main/core-infra): this folder contains terraform modules to create ECS cluster, VPC and subnets, and task execution role. This is all the infrastructure that is needed to get started with ECS Fargate! You may not even need to create the VPC and subnets and can use the existing ones.
 
 
-* [ecsdemo-frontend-deployment](https://github.com/arvindsoni80/ecs-fg-terraform-webinar-demo/tree/main/ecsdemo-frontend-deployment): this folder contains:
-  * Load-balanced ECS service creation resources including ECS service, ALB, target group, and associate security groups
+* [ecsdemo-frontend-deployment](https://github.com/arvindsoni80/ecs-fg-terraform-webinar-demo/tree/main/ecsdemo-frontend-deployment): this folder contains terraform modules to create:
+  * Load-balanced ECS service including ECS service, ALB, target group, and associate security groups
   * ECS task definition for the service
   * ECR repository for the image used in the task
-  * CodeBuild to build and store images in ECR
+  * CodeBuild to build and store images in ECR repository
   * CodePipeline to coordinate the image build whenever code is changed in the application repository main branch, and deploy the new image via rolling deployment using ECS 
-  * S3 bucket to store build related assets
+  * S3 bucket to store build related artifacts
 
 
 
