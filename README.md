@@ -7,7 +7,7 @@ In repository there are following folders
 - core-infrastructure/ : this folder contains terraform modules to create ECS cluster, VPC and subnets, and task execution role. This is all the infrastructure that is needed to get started with ECS Fargate! You may not even need to create the VPC and subnets and can use the existing ones.
 
 
-- ecsdemo-frontend-deployment: this folder contains:
+- ecsdemo-frontend-deployment/: this folder contains:
 -- Load-balanced ECS service creation resources including ECS service, ALB, target group, and associate security groups
 -- ECS task definition for the service
 -- ECR repository for the image used in the task
