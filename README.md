@@ -12,7 +12,7 @@ In this repository there are following main folders
   * ECS task definition for the service
   * ECR repository for the image used in the task
   * CodeBuild to build and store images in ECR repository
-  * CodePipeline to coordinate the image build whenever code is changed in the application repository main branch, and deploy the new image via rolling deployment using ECS 
+  * CodePipeline to coordinate the image build whenever code is changed in the application repository `master` branch, and deploy the new image via rolling deployment using ECS 
   * S3 bucket to store build related artifacts
 
 
